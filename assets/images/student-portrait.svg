@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 640" role="img" aria-labelledby="title description">
+  <title id="title">Illustrated student portrait placeholder</title>
+  <desc id="description">A friendly, abstract portrait illustration in navy, blue, and teal.</desc>
+  <rect width="600" height="640" fill="#eaf2ff"/>
+  <circle cx="488" cy="112" r="44" fill="#ccfbf1"/>
+  <circle cx="90" cy="205" r="18" fill="#bfdbfe"/>
+  <path d="M92 640c18-139 90-217 208-217s190 78 208 217" fill="#2563eb"/>
+  <path d="M211 430h178v100c-22 41-53 61-89 61s-67-20-89-61z" fill="#d99873"/>
+  <ellipse cx="300" cy="292" rx="125" ry="151" fill="#edb18b"/>
+  <path d="M176 296c-20-96 13-182 102-199 99-20 174 52 148 179-10-39-29-65-57-79-39 39-108 58-190 50z" fill="#17243d"/>
+  <path d="M180 279c-22-23-33 10-18 46 7 17 20 24 31 16zm240 0c22-23 33 10 18 46-7 17-20 24-31 16z" fill="#e7a47f"/>
+  <path d="M236 304c13-9 28-9 41 0m47 0c13-9 28-9 41 0" fill="none" stroke="#573c39" stroke-width="8" stroke-linecap="round"/>
+  <path d="M274 366c17 15 37 15 54 0" fill="none" stroke="#a44f50" stroke-width="7" stroke-linecap="round"/>
+  <path d="M274 420v25m52-25v25" stroke="#b8775c" stroke-width="4"/>
+  <path d="M243 495c18 22 37 34 57 34s39-12 57-34" fill="none" stroke="#f8fafc" stroke-width="8" stroke-linecap="round"/>
+  <path d="M244 491l-53 19 29 104h160l29-104-53-19c-17 26-35 39-56 39s-39-13-56-39z" fill="#fff"/>
+  <path d="M300 532l-22 26 22 56 22-56z" fill="#14b8a6"/>
+  <circle cx="478" cy="476" r="13" fill="#14b8a6"/><path d="M478 452v48m-24-24h48" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+</svg>

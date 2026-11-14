@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title description">
+  <title id="title">Student grade calculator concept</title><desc id="description">A sample dashboard with assessment rows and a grade summary.</desc>
+  <rect width="800" height="480" fill="#eff6ff"/><circle cx="692" cy="82" r="98" fill="#dbeafe"/>
+  <rect x="139" y="66" width="522" height="348" rx="22" fill="#fff" stroke="#dbe3ef" stroke-width="2"/>
+  <rect x="139" y="66" width="522" height="58" rx="22" fill="#0f172a"/><path d="M139 102h522v22H139z" fill="#0f172a"/>
+  <circle cx="169" cy="95" r="7" fill="#60a5fa"/><text x="191" y="101" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">GRADE SUMMARY</text>
+  <text x="175" y="163" fill="#64748b" font-family="Arial,sans-serif" font-size="13">COURSEWORK</text>
+  <rect x="175" y="178" width="273" height="49" rx="9" fill="#f8fafc"/><text x="193" y="208" fill="#334155" font-family="Arial,sans-serif" font-size="14">Assignments</text><text x="405" y="208" fill="#0f172a" font-family="Arial,sans-serif" font-size="14" font-weight="700">24 / 30</text>
+  <rect x="175" y="238" width="273" height="49" rx="9" fill="#f8fafc"/><text x="193" y="268" fill="#334155" font-family="Arial,sans-serif" font-size="14">Mid-term test</text><text x="405" y="268" fill="#0f172a" font-family="Arial,sans-serif" font-size="14" font-weight="700">28 / 35</text>
+  <rect x="175" y="298" width="273" height="49" rx="9" fill="#f8fafc"/><text x="193" y="328" fill="#334155" font-family="Arial,sans-serif" font-size="14">Final assessment</text><text x="405" y="328" fill="#0f172a" font-family="Arial,sans-serif" font-size="14" font-weight="700">— / 35</text>
+  <rect x="479" y="165" width="149" height="182" rx="15" fill="#eff6ff"/><text x="502" y="202" fill="#64748b" font-family="Arial,sans-serif" font-size="12">CURRENT TOTAL</text><text x="503" y="263" fill="#2563eb" font-family="Arial,sans-serif" font-size="54" font-weight="700">52</text><text x="557" y="262" fill="#64748b" font-family="Arial,sans-serif" font-size="17">/ 65</text><rect x="502" y="291" width="101" height="9" rx="5" fill="#dbeafe"/><rect x="502" y="291" width="80" height="9" rx="5" fill="#2563eb"/><text x="502" y="326" fill="#475569" font-family="Arial,sans-serif" font-size="12">Keep it up!</text>
+</svg>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Adeniran Noah with a question or message about this student portfolio.">
+  <meta name="theme-color" content="#0f172a">
+  <title>Contact | Adeniran Noah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Adeniran Noah home"><span class="brand-mark">AN</span><span>Adeniran Noah</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="primary-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a class="nav-contact" href="contact.html" aria-current="page">Contact</a></li><li><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Dark mode</span></button></li></ul>
+  </nav></header>
+  <main id="main">
+    <section class="page-hero container"><p class="eyebrow">LET’S CONNECT</p><h1>Have a question? <span class="text-blue">Say hello.</span></h1><p>Use the form to try the client-side validation. This is a demonstration only; your message will not be sent or stored.</p></section>
+    <section class="section container contact-layout">
+      <div class="contact-info"><p class="eyebrow">CONTACT DETAILS</p><h2>Here’s where to find me</h2><p>Personal contact details below are placeholders. Replace them with information you’re comfortable sharing.</p>
+        <div class="contact-detail"><div><span>Email</span><a href="mailto:adenirannoah9@gmail.com">adenirannoah9@gmail.com</a></div></div>
+        <div class="contact-detail"><div><span>University</span><strong>MIVA Open University</strong></div></div>
+        <div class="demo-notice"><strong>Demo form</strong><p>Submitting this form only displays a confirmation in your browser. No email is delivered because this static project has no backend.</p></div>
+      </div>
+      <div class="contact-form-card"><form id="contact-form" novalidate>
+        <div class="form-field"><label for="full-name">Full name <span aria-hidden="true">*</span></label><input id="full-name" name="name" type="text" autocomplete="name" required aria-describedby="name-error"><small class="field-error" id="name-error"></small></div>
+        <div class="form-field"><label for="email">Email address <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error"><small class="field-error" id="email-error"></small></div>
+        <div class="form-field"><label for="phone">Phone number <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required aria-describedby="phone-error"><small class="field-error" id="phone-error"></small></div>
+        <div class="form-field"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea><small class="field-error" id="message-error"></small></div>
+        <button class="button button-primary button-full" type="submit">Check and submit <span aria-hidden="true">→</span></button>
+        <div id="contact-form-message" class="form-message" role="status" aria-live="polite"></div>
+      </form></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">AN</span><span>Adeniran Noah</span></a><p></p><div class="footer-links"><a href="projects.html">Projects</a><a href="planner.html">Planner</a></div></div><div class="container footer-bottom"><span>© <span data-current-year>2026</span> Adeniran Noah</span></div></footer>
+</body>
+</html>
