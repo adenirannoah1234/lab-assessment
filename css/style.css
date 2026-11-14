@@ -36,7 +36,10 @@ img { display: block; max-width: 100%; }
 a { color: inherit; }
 button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
-:focus-visible { outline: 3px solid #60a5fa; outline-offset: 3px; }
+:focus-visible {
+   outline: 3px solid #60a5fa; 
+   outline-offset: 3px;
+   }
 .site-header, .skill-card, .featured-card, .project-card, .stat-card, .progress-card, .task-card, .add-task-panel, .contact-form-card, .interest-card, .achievement-card, .cta-panel, .floating-note, .detail-box, .note, .panel, .card, .dialog, .contact-detail, .demo-notice, .form-field input, .form-field select, .form-field textarea, .button, .nav-contact { box-shadow: none !important; }
 .site-header { backdrop-filter: none !important; }
 .site-header { animation: fade-in .45s ease-out both; }

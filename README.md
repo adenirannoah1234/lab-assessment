@@ -4,14 +4,12 @@ A responsive, multi-page student portfolio and coursework planner built as a COS
 
 ## Student details
 
-Update the remaining placeholders before submission:
-
 - **Student name:** Adeniran Noah
-- **Matriculation number:** [Add your matriculation number]
+- **Matriculation number:** 2025/C/SENG/0728
 - **Department:** Software Engineering
 - **University:** MIVA Open University
-- **GitHub repository URL:** [Add your repository URL]
-- **Live website URL:** [Add your deployed website URL]
+- **GitHub repository URL:** (https://github.com/adenirannoah1234/lab-assessment.git)
+- **Live website URL:** https://lab-assessment-six.vercel.app
 
 ## Features
 
@@ -66,14 +64,6 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`. The project has no server-side functionality. Planner tasks are saved only in the browser profile where they were created.
 
-## Replace the sample student information
-
-1. Replace the sample biography and education row, and add your matriculation number and any other required student details.
-2. Update the page titles and descriptions near the top of each HTML file to match your profile.
-3. Replace `assets/images/student-portrait.svg` with a profile image you have permission to use, and update the image `src` and meaningful `alt` text as needed.
-4. Update the sample interests, skills, achievements, and contact details in `about.html`, `index.html`, and `contact.html`. Do not list qualifications or skills you do not have.
-5. Replace the sample project concepts and illustrations with your actual work when available. Keep the details dialog honest about what is implemented versus planned.
-6. Fill in your matriculation number, repository URL, and live URL in this README. Only publish personal contact details you are comfortable making public.
 
 ## Academic planner behavior
 
