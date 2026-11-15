@@ -44,6 +44,7 @@ if (menuButton && navigationMenu) {
     menuButton.setAttribute("aria-expanded", String(!isExpanded));
     menuButton.setAttribute("aria-label", isExpanded ? "Open navigation menu" : "Close navigation menu");
     navigationMenu.classList.toggle("is-open", !isExpanded);
+    document.querySelector(".site-header")?.classList.toggle("menu-open", !isExpanded);
   });
 
   navigationMenu.addEventListener("click", (event) => {
@@ -51,6 +52,7 @@ if (menuButton && navigationMenu) {
       menuButton.setAttribute("aria-expanded", "false");
       menuButton.setAttribute("aria-label", "Open navigation menu");
       navigationMenu.classList.remove("is-open");
+      document.querySelector(".site-header")?.classList.remove("menu-open");
     }
   });
 }
