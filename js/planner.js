@@ -192,6 +192,19 @@ function addTask(event) {
   taskForm.reset();
   renderTasks();
   taskFormMessage.textContent = "Task added to your planner.";
+  showSuccessDialog("#task-success-dialog", "#task-success-close");
+}
+
+function showSuccessDialog(dialogSelector, closeButtonSelector) {
+  const dialog = document.querySelector(dialogSelector);
+  if (!dialog || typeof dialog.showModal !== "function") return;
+  const closeButton = dialog.querySelector(closeButtonSelector);
+  const close = () => dialog.close();
+  closeButton?.addEventListener("click", close, { once: true });
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  }, { once: true });
+  dialog.showModal();
 }
 
 function toggleTask(taskId) {
@@ -215,6 +228,7 @@ function deleteTask() {
   saveTasks();
   renderTasks();
   deleteDialog.close("delete");
+  showSuccessDialog("#task-deleted-dialog", "#task-deleted-close");
 }
 
 taskForm.addEventListener("submit", addTask);

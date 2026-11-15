@@ -55,6 +55,22 @@
         </form>
       </aside>
     </section>
+    <dialog class="delete-dialog success-dialog" id="task-success-dialog" aria-labelledby="task-success-title" aria-describedby="task-success-description">
+      <p class="eyebrow">SUCCESS</p>
+      <h2 id="task-success-title">Task added successfully!</h2>
+      <p id="task-success-description">Your new task is now in your planner.</p>
+      <div class="delete-dialog-actions">
+        <button class="button button-primary" id="task-success-close" type="button">Done</button>
+      </div>
+    </dialog>
+    <dialog class="delete-dialog success-dialog" id="task-deleted-dialog" aria-labelledby="task-deleted-title" aria-describedby="task-deleted-description">
+      <p class="eyebrow">SUCCESS</p>
+      <h2 id="task-deleted-title">Task deleted successfully!</h2>
+      <p id="task-deleted-description">The task has been permanently removed from your planner.</p>
+      <div class="delete-dialog-actions">
+        <button class="button button-primary" id="task-deleted-close" type="button">Done</button>
+      </div>
+    </dialog>
     <dialog class="delete-dialog" id="delete-dialog" aria-labelledby="delete-dialog-title" aria-describedby="delete-dialog-description">
       <p class="eyebrow">CONFIRM DELETION</p>
       <h2 id="delete-dialog-title">Delete this task?</h2>
