@@ -1,93 +1,98 @@
-# Student Portfolio & Academic Planner
+# Adeniran Noah — Student Portfolio & Academic Planner
 
-A responsive, multi-page student portfolio and coursework planner built as a COS 106 – Introduction to Web Technologies assignment for MIVA Open University. It uses only HTML5, CSS3, and vanilla JavaScript; there is no framework, backend, or external database.
+A responsive, multi-page student portfolio and coursework planner built with pure HTML5, CSS3, and vanilla JavaScript — no frameworks, no backend, no database. Created as a COS 106 (Introduction to Web Technologies) assignment at MIVA Open University.
 
-## Student details
+**Live site:** https://lab-assessment-six.vercel.app
 
-- **Student name:** Adeniran Noah
-- **Matriculation number:** 2025/C/SENG/0728
-- **Department:** Software Engineering
-- **University:** MIVA Open University
-- **GitHub repository URL:** (https://github.com/adenirannoah1234/lab-assessment.git)
-- **Live website URL:** https://lab-assessment-six.vercel.app
+## Student Details
+
+| | |
+|---|---|
+| **Name** | Adeniran Noah |
+| **Matric No.** | 2025/C/SENG/0728 |
+| **Department** | Software Engineering |
+| **University** | MIVA Open University |
+| **Repository** | https://github.com/adenirannoah1234/lab-assessment.git |
+
+## Overview
+
+The site combines a personal portfolio (home, about, projects, contact) with a functional academic planner that lets students create, track, filter, and persist coursework tasks entirely in the browser.
 
 ## Features
 
-- Five linked pages: home, about, projects, academic planner, and contact.
-- Shared responsive navigation with mobile hamburger menu and active-page highlighting.
-- Three illustrated project concepts with working details dialogs.
-- Academic planner with task creation, course, due date, priority, completion, filters, confirmation before deletion, statistics, and local browser persistence.
-- Contact-form validation for required fields, email format, and digits-only phone numbers. Submission is explicitly a browser-only demonstration; it does not send an email.
-- About page includes a semantic education table and skills including React, Next.js, TypeScript, Python, and Django.
-- The audio/multimedia section and sample audio asset have been removed at the student's request.
-- Keyboard focus indicators, a skip link, semantic page structure, responsive layouts, and reduced-motion support.
+- **Five linked pages** — home, about, projects, academic planner, and contact, with shared navigation, mobile hamburger menu, and active-page highlighting.
+- **Academic planner** — create tasks with title, course, due date, and priority; mark complete; filter by all / pending / completed; view live statistics and completion progress; delete with confirmation. Tasks persist via `localStorage` and corrupted storage shows a visible error instead of failing silently.
+- **Project showcase** — three illustrated project concepts with working details dialogs.
+- **Validated contact form** — required-field, email-format, and digits-only phone checks with inline errors. Submission is a browser-only demonstration; nothing is sent or stored.
+- **Accessibility** — semantic landmarks, skip link, labels, focus indicators, and reduced-motion support.
+- **Light / dark theme** toggle with responsive mobile-first layouts (Flexbox + Grid).
 
-## Technologies
+## Tech Stack
 
-- HTML5 for page structure and accessible forms.
-- CSS3 for the shared design system, responsive layouts, Flexbox, Grid, and interactions.
-- Vanilla JavaScript for navigation, project dialogs, form validation, and planner behavior.
-- `localStorage` for saving planner tasks in the current browser.
+| Technology | Role |
+|---|---|
+| HTML5 | Page structure, semantic markup, accessible forms |
+| CSS3 | Design system, responsive layouts, Flexbox, Grid, theming |
+| Vanilla JavaScript | Navigation, dialogs, validation, planner logic |
+| `localStorage` | Client-side task persistence (key: `alexMorganAcademicTasks`) |
 
-No package installation or build step is required. Google Fonts are used when an internet connection is available; system sans-serif fallbacks are included.
-
-## Folder structure
+## Project Structure
 
 ```text
 .
-├── index.html
-├── about.html
-├── projects.html
-├── planner.html
-├── contact.html
+├── index.html            # Home / hero
+├── about.html            # Biography, education table, skills
+├── projects.html         # Project concepts + details dialogs
+├── planner.html          # Academic task planner
+├── contact.html          # Contact form
 ├── css/
-│   └── style.css
+│   └── style.css         # Shared design system
 ├── js/
-│   ├── main.js
-│   ├── planner.js
-│   └── contact.js
+│   ├── main.js           # Navigation, theme, dialogs
+│   ├── planner.js        # Task CRUD, filters, stats, storage
+│   └── contact.js        # Form validation
 └── assets/
     └── images/
-        ├── student-portrait.svg
+        ├── Adeniran-noah.jpeg
         ├── grade-calculator.svg
         ├── expense-tracker.svg
         └── digital-library.svg
 ```
 
-## Run locally
+## Getting Started
 
-Open `index.html` in a modern browser. For a local web-server preview, open a terminal in this folder and run one of these commands if installed:
+No build step or dependencies. Open `index.html` directly, or serve locally:
 
 ```sh
 python3 -m http.server 8000
+# then visit http://localhost:8000
 ```
 
-Then visit `http://localhost:8000`. The project has no server-side functionality. Planner tasks are saved only in the browser profile where they were created.
+Planner tasks are stored only in the browser profile where they were created.
 
+## Academic Planner — How It Works
 
-## Academic planner behavior
+Tasks are stored as an array of `{ id, title, course, dueDate, priority, completed }` objects under the `alexMorganAcademicTasks` key in `localStorage`. The form validates title, course, and date before creating a task. Task cards render dynamically with an empty state, status filters, and live totals (total / pending / completed / completion %). Deletion requires confirmation. Data never leaves the browser.
 
-`js/planner.js` stores tasks as an array of objects. Each task contains an ID, title, course, due date, priority, and completion status. The form validates the title, subject, and date before creating a task. The page renders task cards dynamically, filters by all/pending/completed status, and updates total, pending, completed, and completion-percentage summaries whenever a task changes. Tasks are saved under the `alexMorganAcademicTasks` key in `localStorage`, so they persist across refreshes in the same browser. They are not uploaded or synchronized. Deleting a task requires browser confirmation. Corrupted or unavailable storage produces a visible message instead of silently appearing to save.
+## Contact Form — Validation Rules
 
-## Contact-form validation
+- All fields required (name, email, phone, message)
+- Email checked against a standard format pattern
+- Phone accepts digits only
+- Errors appear beside each field and clear on edit; valid submissions show a demo-only confirmation
 
-`js/contact.js` checks that all four fields are filled, checks email syntax with a basic format pattern, and accepts only digits in the phone field. Errors are displayed beside the related field and cleared as the user edits it. A valid submission displays an explicit demonstration-only confirmation. No message is sent or retained.
+## Assignment Requirements
 
-## Assignment requirements checklist
-
-| Requirement | Implemented in |
+| Requirement | Location |
 |---|---|
-| Five static pages with consistent navigation and footer | `index.html`, `about.html`, `projects.html`, `planner.html`, `contact.html` |
-| Premium visual style, design tokens, typography, and shared stylesheet | `css/style.css` |
-| Responsive mobile-first layouts, Flexbox/Grid, hamburger menu, reduced motion | `css/style.css`, `js/main.js` |
-| Student introduction, profile image, study details, skills, featured projects, calls to action | `index.html` |
-| Biography, education table, aspirations, skills, interests, and achievement placeholders | `about.html` |
-| Three project concepts with illustrations, technologies, and working details interactions | `projects.html`, `assets/images/`, `js/main.js` |
-| Academic task add, title/course/date/priority, completion, delete confirmation, filters | `planner.html`, `js/planner.js` |
-| Dynamic task rendering, empty state, statistics, progress, and persistent browser storage | `planner.html`, `js/planner.js` |
-| Corrupted storage handling and long-title handling | `js/planner.js`, `planner.html` |
-| Contact required fields, email and phone checks, field-level errors, demo success | `contact.html`, `js/contact.js` |
-| Semantic landmarks, labels, tables, lists, images, accessible states | All HTML pages |
-| Local run, customization, planner, validation, and GitHub Pages documentation | `README.md` |
-
-
+| Five static pages, consistent nav + footer | `index.html`, `about.html`, `projects.html`, `planner.html`, `contact.html` |
+| Shared stylesheet, design tokens, typography | `css/style.css` |
+| Responsive layouts, Flexbox/Grid, hamburger menu, reduced motion | `css/style.css`, `js/main.js` |
+| Intro, profile photo, study details, skills, CTAs | `index.html` |
+| Bio, education table, aspirations, interests | `about.html` |
+| Three project concepts with details interactions | `projects.html`, `assets/images/`, `js/main.js` |
+| Task add / complete / delete-confirm / filters | `planner.html`, `js/planner.js` |
+| Dynamic rendering, stats, progress, persistence | `planner.html`, `js/planner.js` |
+| Storage-error and long-title handling | `js/planner.js`, `planner.html` |
+| Contact validation with field-level errors | `contact.html`, `js/contact.js` |
+| Semantic, accessible markup throughout | All pages |
