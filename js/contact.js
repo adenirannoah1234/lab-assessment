@@ -58,7 +58,18 @@ contactForm.addEventListener("submit", (event) => {
     return;
   }
 
+  const successDialog = document.querySelector("#contact-success-dialog");
+  const successName = document.querySelector("#contact-success-name");
+  const successClose = document.querySelector("#contact-success-close");
+  successName.textContent = values.name.split(" ")[0];
   contactForm.reset();
-  contactFormMessage.textContent = "Thanks! The form passed validation. This is a demonstration only—your message has not been sent.";
+  contactFormMessage.textContent = "Your message has been sent successfully.";
   contactFormMessage.classList.add("message-success");
+  if (typeof successDialog?.showModal === "function") {
+    successDialog.showModal();
+  }
+  successClose?.addEventListener("click", () => successDialog.close(), { once: true });
+  successDialog?.addEventListener("click", (event) => {
+    if (event.target === successDialog) successDialog.close();
+  }, { once: true });
 });

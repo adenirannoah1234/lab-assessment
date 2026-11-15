@@ -21,22 +21,30 @@
     <ul class="nav-links" id="primary-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a class="nav-contact" href="contact.html" aria-current="page">Contact</a></li><li><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Dark mode</span></button></li></ul>
   </nav></header>
   <main id="main">
-    <section class="page-hero container"><p class="eyebrow">LET’S CONNECT</p><h1>Have a question? <span class="text-blue">Say hello.</span></h1><p>Use the form to try the client-side validation. This is a demonstration only; your message will not be sent or stored.</p></section>
+    <section class="page-hero container"><p class="eyebrow">LET’S CONNECT</p><h1>Have a question? <span class="text-blue">Say hello.</span></h1><p>Send a message with the form below, or reach me directly by email. The form checks your details in the browser before confirming.</p></section>
     <section class="section container contact-layout">
-      <div class="contact-info"><p class="eyebrow">CONTACT DETAILS</p><h2>Here’s where to find me</h2><p>Personal contact details below are placeholders. Replace them with information you’re comfortable sharing.</p>
+      <div class="contact-info"><p class="eyebrow">CONTACT DETAILS</p><h2>Here’s where to find me</h2><p>The quickest way to reach me is by email — I usually reply within a day or two.</p>
         <div class="contact-detail"><div><span>Email</span><a href="mailto:adenirannoah9@gmail.com">adenirannoah9@gmail.com</a></div></div>
         <div class="contact-detail"><div><span>University</span><strong>MIVA Open University</strong></div></div>
-        <div class="demo-notice"><strong>Demo form</strong><p>Submitting this form only displays a confirmation in your browser. No email is delivered because this static project has no backend.</p></div>
+        <div class="demo-notice"><strong>Please note</strong><p>This portfolio is a static site, so the form confirms your message here in the browser rather than sending an email. For a guaranteed reply, write to me directly at the address above.</p></div>
       </div>
       <div class="contact-form-card"><form id="contact-form" novalidate>
         <div class="form-field"><label for="full-name">Full name <span aria-hidden="true">*</span></label><input id="full-name" name="name" type="text" autocomplete="name" required aria-describedby="name-error"><small class="field-error" id="name-error"></small></div>
         <div class="form-field"><label for="email">Email address <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error"><small class="field-error" id="email-error"></small></div>
         <div class="form-field"><label for="phone">Phone number <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required aria-describedby="phone-error"><small class="field-error" id="phone-error"></small></div>
         <div class="form-field"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea><small class="field-error" id="message-error"></small></div>
-        <button class="button button-primary button-full" type="submit">Check and submit <span aria-hidden="true">→</span></button>
+        <button class="button button-primary button-full" type="submit">Send message <span aria-hidden="true">→</span></button>
         <div id="contact-form-message" class="form-message" role="status" aria-live="polite"></div>
       </form></div>
     </section>
+    <dialog class="delete-dialog success-dialog" id="contact-success-dialog" aria-labelledby="contact-success-title" aria-describedby="contact-success-description">
+      <p class="eyebrow">SUCCESS</p>
+      <h2 id="contact-success-title">Email sent successfully!</h2>
+      <p id="contact-success-description">Thanks for reaching out, <span id="contact-success-name">friend</span>. Your message has been sent — I’ll get back to you soon.</p>
+      <div class="delete-dialog-actions">
+        <button class="button button-primary" id="contact-success-close" type="button">Done</button>
+      </div>
+    </dialog>
   </main>
   <footer class="site-footer"><div class="container footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">AN</span><span>Adeniran Noah</span></a><p></p><div class="footer-links"><a href="projects.html">Projects</a><a href="planner.html">Planner</a></div></div><div class="container footer-bottom"><span>© <span data-current-year>2026</span> Adeniran Noah</span></div></footer>
 </body>

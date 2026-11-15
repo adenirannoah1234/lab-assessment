@@ -210,6 +210,7 @@ html[data-theme="dark"] .skill-tag-list li { background-color: #0f172a; border-c
 .delete-dialog > p:not(.eyebrow) { margin-bottom: 22px; color: var(--muted); font-size: 13px; }
 .delete-dialog-actions { display: flex; justify-content: flex-end; gap: 10px; }
 .button-danger { background: var(--error); color: white; }
+
 .button-danger:hover { background: #b91c1c; }
 .planner-hero { padding-bottom: 12px; }
 .planner-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; align-items: start; gap: 30px; padding-top: 30px; }
